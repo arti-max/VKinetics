@@ -1,0 +1,17 @@
+{
+    "model": "none",
+    "hitbox": [0, 0, 0, 1, 1, 1],
+    "rotation": "pipe",
+    "light-passing": true,
+    "sky-light-passing": true,
+    "solid": false,
+    "obstacle": true,
+    "selectable": true,
+    "fields": {
+        "entity_uid": {"type": "int32", "convert-strategy": "reset"},
+        "network_id": {"type": "int32"},
+        "direction": {"type": "int8"},
+        "ratio": {"type": "float32"},
+        "roll": {"type": "int16", "convert-strategy": "reset"}
+    }
+}

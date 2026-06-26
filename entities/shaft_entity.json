@@ -1,0 +1,6 @@
+{
+    "body-type": "static",
+    "blocking": false,
+    "hitbox": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+    "skeleton-name": "shaft"
+}
