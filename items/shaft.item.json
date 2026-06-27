@@ -1,0 +1,6 @@
+{
+    "icon-type": "block",
+    "icon": "voxel_kinetics:itemm_shaft",
+    "caption": "Shaft",
+    "placing-block": "voxel_kinetics:shaft"
+}

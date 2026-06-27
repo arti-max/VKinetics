@@ -7,6 +7,7 @@
     "solid": false,
     "obstacle": true,
     "selectable": true,
+    "texture": "shaft",
     "fields": {
         "entity_uid": {"type": "int32", "convert-strategy": "reset"},
         "network_id": {"type": "int32"},

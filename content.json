@@ -1,18 +1,31 @@
 {
-  "blocks": [
-    "cogwheel",
-    "generator",
-    "large_cogwheel",
-    "shaft",
-    "gearbox",
-    "hand_crank"
-  ],
-  "items": [],
   "entities": [
     "shaft_entity",
     "cogwheel_entity",
     "large_cogwheel_entity",
     "gearbox_entity",
     "hand_crank_entity"
+  ],
+  "items": [
+    "cogwheel.item",
+    "gearbox.item",
+    "generator.item",
+    "hand_crank.item",
+    "large_cogwheel.item",
+    "shaft.item"
+  ],
+  "blocks": [
+    "cogwheel",
+    "generator",
+    "large_cogwheel",
+    "shaft",
+    "gearbox",
+    "hand_crank",
+    "itemm_cogwheel",
+    "itemm_gearbox",
+    "itemm_generator",
+    "itemm_hand_crank",
+    "itemm_large_cogwheel",
+    "itemm_shaft"
   ]
 }

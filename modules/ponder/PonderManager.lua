@@ -41,7 +41,6 @@ function PonderManager.close()
 
     -- TODO: close ui
 
-    print("[Ponder] Интерфейс закрыт.")
 end
 
 return PonderManager;

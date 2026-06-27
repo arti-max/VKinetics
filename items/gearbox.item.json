@@ -1,0 +1,6 @@
+{
+    "icon-type": "block",
+    "icon": "voxel_kinetics:itemm_gearbox",
+    "caption": "Gearbox",
+    "placing-block": "voxel_kinetics:gearbox"
+}

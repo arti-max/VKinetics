@@ -72,6 +72,10 @@ function HandCrank:on_render(gtime, dt)
     local dir = self:get_direction();
     local rpm = self:get_rpm();
 
+    if not self._saved_angle then
+        self._saved_angle = 0;
+    end
+
     local current_angle = 0
     if rpm > 0 then
         current_angle = self._saved_angle + (gtime * rpm * 6 * dir) % 360;
@@ -89,14 +93,20 @@ function HandCrank:on_render(gtime, dt)
         self._current_angle = current_angle;
     end
 
+    local yx, yy, yz = block.get_Y(self.x, self.y, self.z)
+
+    if yx == 1 or yz == -1 or yy == -1 then
+        current_angle = -current_angle;
+    end
+
     local base_mat = self:get_base_rotation();
-    local spin_mat = mat4.rotate({0, 1, 0}, -current_angle);
+    local spin_mat = mat4.rotate({0, 1, 0}, current_angle);
     local final_mat = mat4.mul(base_mat, spin_mat);
 
     ent.transform:set_rot(final_mat);
 end
 
-function HandCrank:cache_rotation()    
+function HandCrank:cache_rotation()
     local yx, yy, yz = block.get_Y(self.x, self.y, self.z)
 
     self._cached_offsets = {{x = yx, y = yy, z = yz}}

@@ -5,8 +5,6 @@ local KineticBlock = require "KineticBlock";
 local Shaft = setmetatable({}, {__index = KineticBlock});
 Shaft.__index = Shaft;
 
-Shaft.base_impact = 512;
-
 function Shaft:on_placed()
     KineticBlock.on_placed(self);
     local ent = entities.spawn(make_entity_prefix("shaft"), make_position_offs(self.x, self.y, self.z, 0.5));
