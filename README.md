@@ -20,5 +20,5 @@
 
 Установить фреймворк можно по ссылкам ниже:
 
-* [Скачать последнюю версию с GitHub](#)
-* [Скачать с VoxelWorld стабильную версию](#)
+* [Скачать последнюю версию с GitHub](https://github.com/arti-max/VKinetics/archive/refs/heads/main.zip)
+* [Скачать с VoxelWorld стабильную версию](https://voxelworld.ru/mods/voxel-kinetics/)
